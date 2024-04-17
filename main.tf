@@ -20,3 +20,7 @@ module "lambdas" {
   context = module.label.context
   table_authors_name = module.table_authors.id
 }
+
+module "api_gateway" {
+  source = "./modules/api-gateway"
+}
